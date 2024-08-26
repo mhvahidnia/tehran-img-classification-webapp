@@ -1,19 +1,14 @@
 # # app.py
 # from flask import Flask, request, jsonify
-# from tensorflow import keras
-# from keras.layers import Dense
-# from keras.models import Sequential, load_model
-
-# from keras.preprocessing import image
-
+# from tensorflow.keras.models import load_model
+# from tensorflow.keras.preprocessing import image
 # import numpy as np
 # import json
 
 # app = Flask(__name__)
 
 # # Load the trained model
-# #model = load_model('my_trained_model.keras')
-# model = load_model('my_trained_model.h5')
+# model = load_model('my_trained_model.keras')
 
 # # Load class labels from the JSON file
 # with open('class_labels.json', 'r') as f:
@@ -57,12 +52,7 @@
 
 
 
-
-
-
-
-
-
+from tensorflow import keras
 from flask import Flask, request, jsonify
 from keras.preprocessing import image
 from keras.models import load_model
